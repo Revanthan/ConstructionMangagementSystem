@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>REVIEW</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+	body{background-image: url(1.jpg);
+	 background-repeat: no-repeat;
+  background-attachment: fixed;
+    background-position: center;
+		background-size: 1536px 1100px;
+		}
+</style>
+
+</head>
+<body>
+	<header>
+	<nav>
+	<ul class="navi">
+		<li class="navi"><a href="home.html" title="Home page">HOME</a></li>
+		<li class="navi"><a href="#" title="About page">ABOUT</a></li>
+		<li class="navi"><a href="#" title="Contact US">Contact Us</a></li>
+		<li class="navi"><a href="#" title="Inpector">INSPECTER LOGIN</a></li>
+	
+	</ul></nav>
+</header>
+<body>
+<ul class="sidebar">
+      <li class="sidebar-brand"><a href="">INSPECTER MENU:</a></li>
+      <li><a href="project.html">PROJECTS</a></li>
+      <li><a href="review.html">REVIEW</a></li>
+      <li><a href="profile.html">MY Profile</a></li>
+      <li><a href="progress.html">PROGRESS</a></li>
+      <li><a href="home.html">Logout</a></li>
+      </ul>
+
+<div>
+
+	<div id="form-main">
+  <div id="form-div">
+
+
+	<form method="POST" action="projreview.php">
+	<label> Select the project :</label> 
+		<select name="select_option"required>
+		<option value="CMC project" Selected>CMC PROJECT SITE</options>
+		<option value="VIT project">VIT PROJECT SITE</options>
+		<option value="RATNAGIRI project">RATNAGIRI PROJECT SITE</options>
+		<option value="MRF project">MRF COMPANY SITE</options><br><br>
+	</select>	
+
+	<h1>REVIEW</h1>
+		<textarea name="message" id="message" class="form textarea" placeholder="Message"></textarea>
+
+<br><br>
+		
+		<div class="submit">
+    	  <button class="sub" type="submit">submit</button>
+        </div>
+</form>
+	</div>
+  </div>
+</div>	
+
+</body>
+</html>
+

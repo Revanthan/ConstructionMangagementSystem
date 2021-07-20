@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>INSPECTER LOGIN</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header>
+	<nav>
+	<ul class="navi">
+		<li class="navi"><a href="home.html" title="Home page">HOME</a></li>
+		<li class="navi"><a href="#" title="About page">ABOUT</a></li>
+		<li class="navi"><a href="#" title="Projects">PROJECTS</a></li>
+		<li class="navi"><a href="#" title="Contact US">Contact Us</a></li>
+		<li class="navi"><a href="inspector.html" title="Inpector">INSPECTER</a></li>
+	
+	</ul></nav>
+</header>
+
+<body class="insp">
+	<div id="form-main">
+  <div id="form-div">
+
+
+	<form method="POST" action="ins.php">
+	<h1>INSPECTER LOGIN </h1>
+	<p style="color:red;font-size:20px;">Wrong Username or password</p>
+		<input class="a" type="text" name="name" placeholder="User Name" pattern="[A-Za-z]{5,}" required ><br>
+
+	<br>
+		<input class="a"  type="password" name="password" pattern=".{6,}"  title="Six or more characters" placeholder="Enter password" required > <br><br>
+	<br>
+<br><br>
+		<div class="submit">
+    	  <input class="sub" type="submit">
+        </div>
+</form>
+	</div>
+  </div>
+
+</body>
+</html>

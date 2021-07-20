@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>INSPECTER LOGIN</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header>
+	<nav>
+	<ul class="navi">
+		<li class="navi"><a href="home.html" title="Home page">HOME</a></li>
+		<li class="navi"><a href="#" title="About page">ABOUT</a></li>
+		<li class="navi"><a href="#" title="Contact US">Contact Us</a></li>
+		<li class="navi"><a href="#" title="Inpector">INSPECTER LOGIN</a></li>
+	
+	</ul></nav>
+</header>
+<body>
+<ul class="sidebar">
+      <li class="sidebar-brand"><a href="">INSPECTER MENU:</a></li>
+      <li><a href="project.html">PROJECTS</a></li>
+      <li><a href="review.html">REVIEW</a></li>
+      <li><a href="profile.html">MY Profile</a></li>
+      <li><a href="progress.html">PROGRESS</a></li>
+	  <li><a href="home.html">Logout</a></li>
+      </ul>
+
+<div style="margin-left:230px">
+<br><br><br><br><br><br>
+<p  style="margin-left: 417px;font-size: 50px;">Welcome INSPECTOR</p>
+</div>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+m=checkTime(m)
+s=checkTime(s)
+
+document.getElementById('clock').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()', 500)
+}
+
+function checkTime(i)
+{
+if (i<10)
+{ i="0" + i}
+return i
+}
+
+window.onload=startTime;
+
+</script>
+<div id="clock" style="font-size:35px;color:#00aaff;border:3px groove blue;background-color:#aaffaa; width:195px; height:40px; margin-left: 1300px;
+    margin-top: 400px;"></div>
+
+</body>
+</html>
+
